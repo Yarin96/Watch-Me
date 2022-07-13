@@ -1,24 +1,42 @@
-import logo from './logo.svg';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { FavProvider } from './context/FavContext';
+import { SearchProvider } from "./context/SearchContext";
+import { BgProvider } from "./context/BgContext";
+import Home from './pages/Home/Home';
+import Action from "./pages/Genre/Action";
+import Comedy from "./pages/Genre/Comedy";
+import Drama from "./pages/Genre/Drama";
+import Favorites from './pages/Favorites/Favorites';
+import Navbar from './components/Navbar/Navbar';
+import Results from "./pages/Results/Results";
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+
+const App = () => {
+
+  return ( 
+    <BgProvider>
+      <FavProvider>
+        <SearchProvider>
+          <BrowserRouter>
+            <div className="App">
+                <Navbar />
+                  <div className="container">
+                      <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/results" element={<Results />} />
+                        <Route path="/action" element={<Action />} />
+                        <Route path="/comedy" element={<Comedy />} />
+                        <Route path="/drama" element={<Drama />} />
+                        <Route path="/favorites" element={<Favorites />} />
+                      </Routes>
+                  </div>
+            </div>
+          </BrowserRouter>
+        </SearchProvider>
+      </FavProvider>
+    </BgProvider>
   );
 }
 
