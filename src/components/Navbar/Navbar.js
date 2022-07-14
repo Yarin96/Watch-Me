@@ -1,39 +1,81 @@
-import React, {useState, useEffect} from 'react';
-import './Navbar.css';
+import { useState } from 'react';
 import { Link } from "react-router-dom";
+import { FaBars } from 'react-icons/fa';
 import SearchBar from '../SearchBar/SearchBar';
+import Dropdown from '../Dropdown/Dropdown';
+import './Navbar.css';
+
 
 const Navbar = () => {
 
-    const [genreLinks, setGenreLinks] = useState([]);
+    const [click, setClick] = useState(false);
+    const [dropdown, setDropdown] = useState(false);
+  
+    const handleClick = () => setClick(!click);
+    const closeMobileMenu = () => setClick(false);
 
-    useEffect(() => {
-      const links = [
-        { name: "Action", path: '/action' },
-        { name: "Comedy", path: '/comedy' },
-        { name: "Drama", path: '/drama' },
-      ];
-        setGenreLinks(links);
-    }, []);
+    const onMouseEnter = () => {
+        if (window.innerWidth < 850) {
+          setDropdown(false);
+        } else {
+          setDropdown(true);
+        }
+      };
+    
+      const onMouseLeave = () => {
+        if (window.innerWidth < 850) {
+          setDropdown(false);
+        } else {
+          setDropdown(false);
+        }
+      };
+    
+    const genreOptions = ["/action", "/comedy", "/drama"];
+    const getRandomGenre = () => {
+        return genreOptions[Math.floor(Math.random() * genreOptions.length)];
+    };
 
-    return(
+    return (
     <>
-        <nav className="nav">
-            <Link to='/' className="site-title">Watch-Me</Link>
-            <SearchBar />
-            <ul>
-                <Link to='/'>Home</Link>
-                <div className='dropdown'>
-                    <Link to='#'>Genre</Link>
-                    <div className='dropdown-menu'>
-                            {genreLinks?.map((title, i) => (
-                                <li key={i}>
-                                    <Link to={title.path}>{title.name}</Link>
-                                </li>
-                            ))}
-                    </div>
+        <nav className='navbar'>
+                <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+                    Watch-Me
+                </Link>
+                <div className='search-bar'>
+                    <SearchBar />
                 </div>
-                <Link to='/favorites'>Favorites</Link>
+                <div className='menu-icon' onClick={handleClick}>
+                    <FaBars />
+                </div>
+            <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                <li className='nav-item'>
+                    <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                    Home
+                    </Link>
+                </li>
+                <li
+                    className='nav-item'
+                    onMouseEnter={onMouseEnter}
+                    onMouseLeave={onMouseLeave}
+                >
+                    <Link
+                        to={click ? getRandomGenre() : "#"}
+                        className='nav-links'
+                        onClick={closeMobileMenu}
+                        >
+                        {click ? "Random Genre" : "Genre"}
+                    </Link>
+                    {dropdown && <Dropdown />}
+                </li>
+                <li className='nav-item'>
+                    <Link
+                        to='/favorites'
+                        className='nav-links'
+                        onClick={closeMobileMenu}
+                        >
+                        Favorites
+                    </Link>
+                </li>
             </ul>
         </nav>
     </>

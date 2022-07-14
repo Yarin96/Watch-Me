@@ -1,13 +1,11 @@
 .search {
     width: 290px;
-    height: 20%;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-top: 18px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+    margin-top: 10px;
     border-radius: 20px;
     background: #1f2123;
   }
@@ -20,7 +18,8 @@
     padding-right: 2px;
     padding-left: 2px;
     margin-left: 10px;
-    top: 10px;
+    margin-bottom: 10px;
+    top: 5px;
     outline: none;
     color: #a1a1a1;
     background: #1f2123;
@@ -30,40 +29,8 @@
   .search img {
     width: 30px;
     height: inherit;
+    padding-top: 5px;
     cursor: pointer;
     box-sizing: border-box;
   }
-
-  /* @media screen and (max-width: 600px) {
-
-    .search {
-
-    }
-  
-    .search input {
-
-    }
-  
-    .search img {
-
-    }
-  }
-  
-  @media screen and (max-width: 400px) {
-    .search {
-
-    }
-  
-    h1 {
-
-    }
-  
-    .container {
-
-    }
-  
-    .movie {
-
-    }
- } */
 

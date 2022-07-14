@@ -19,7 +19,7 @@ const Row = ({title, fetchURL}) => {
             setTimeout(() => {
                 setMovies(data.results);
                 setLoading(false);
-            }, 1000);
+            }, 1200);
         })
     }, [fetchURL]);
 
@@ -45,20 +45,20 @@ const Row = ({title, fetchURL}) => {
                             onClick={slideLeft}
                         />
                 </div>
-                <div id="slider">
-                    {movies?.map((movie) => (
-                        ((movie?.genre === title) 
-                        || (title === "Coming Up Soon") 
-                        || (title === "Search Results") ? 
-                        (<MovieCard 
-                            key={movie.id} 
-                            item={movie}
-                            fav={false} 
-                            addToFav={addFavMovie}
-                            removeFromFav={removeFromFav} />
-                            ) : (null))
-                    ))}
-                </div>
+                    <div id="slider">
+                        {movies?.map((movie) => (
+                            ((movie?.genre === title) 
+                            || (title === "Coming Up Soon") 
+                            || (title === "Search Results") ? 
+                            (<MovieCard 
+                                key={movie.id} 
+                                item={movie}
+                                fav={false} 
+                                addToFav={addFavMovie}
+                                removeFromFav={removeFromFav} />
+                                ) : (null))
+                        ))}
+                    </div>
                 <div className="right-arrow">
                     <MdChevronRight 
                         onClick={slideRight}
