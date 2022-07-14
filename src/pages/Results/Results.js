@@ -23,7 +23,7 @@ const Results = () => {
             {(movies === undefined || movies?.length === 0) ?
              (
                 <div className='outer'>
-                    <h1>No results to show.</h1>
+                    <h1>No results to show. 🧟</h1>
                 </div>
              ) : (
                 <Row title="Search Results" fetchURL={url} />

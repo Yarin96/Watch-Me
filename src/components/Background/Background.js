@@ -5,7 +5,7 @@ import './Background.css';
 
 const API_IMG = "https://image.tmdb.org/t/p/original";
 
-const Background  = (props) => {
+const Background = (props) => {
 
     const { chosenMovieImg, shortenString } = useContext(BgContext);
     const { addFavMovie } = useContext(FavContext);
@@ -23,7 +23,7 @@ const Background  = (props) => {
                         alt="background"  
                     />
                     <div className="movie-info">
-                        <h1>Your Choices All in One Place!</h1>
+                        <h1>Your Choices All in One Place! 🤩</h1>
                     </div>
                 </>
             ) : (
@@ -38,7 +38,7 @@ const Background  = (props) => {
                                 <p>Released: {chosenMovieImg?.release_date}</p>
                             </div>
                             <div className="secondary-line">
-                                <button onClick={() => {addFavMovie(chosenMovieImg, like); setLike(!like);}}>Add to Favorites</button>
+                                <button onClick={() => {addFavMovie(chosenMovieImg, like); setLike(!like);}}>⭐Add to Favorites⭐</button>
                             </div>
                             <h3 className="overview">{shortenString(chosenMovieImg?.overview, 300)}</h3>
                         </div>

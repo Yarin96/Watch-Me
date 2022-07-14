@@ -15,6 +15,10 @@ export const FavProvider = ({children}) => {
                 const newFavList = [...favorites, movie];
                 setFavorites(newFavList);
             }
+        }else{
+            if(favorites.find((item) => (item.title === movie.title))){
+                alert(`You have already added this movie to your favorites!`);
+            }
         }
     }
 

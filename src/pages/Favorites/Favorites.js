@@ -23,13 +23,13 @@ const Favorites = () => {
         <Background fav={true} />
         {(favorites.length === 0) ?
             (<div className="outer">
-                    <h1>My Favorites</h1>
-                    <h1>No movies added to Favorites yet, please add some.</h1>
+                    <h1>My Favorites 🍿📽️</h1>
+                    <h1>No movies added to Favorites yet, please add some. 😕</h1>
             </div>
             ) : (
             <div className="outer">
-                <h1>My Favorites</h1>
-                <h1>Number of movies added: {favorites.length}</h1>
+                <h1>My Favorites 🍿📽️</h1>
+                <h1>Total movies added: {favorites.length}</h1>
                 <div className="movie-slider">
                     <div className="left-arrow">
                             <MdChevronLeft 
