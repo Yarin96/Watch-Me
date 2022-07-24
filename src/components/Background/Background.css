@@ -1,88 +1,107 @@
 .bg-props {
     height: 550px;
     width: 100%;
-}
-
-.bg-props img {
+    position: relative;
+  }
+  
+  .bg-props img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.bg-effects {
+  }
+  
+  .bg-effects {
     position: absolute;
     width: 100%;
     height: 550px;
-    background: linear-gradient(to right, rgb(19, 19, 19) -20%, transparent); 
-}
-
-.movie-info {
+    background: linear-gradient(to right, rgb(19, 19, 19) -20%, transparent);
+  }
+  
+  .movie-info {
     position: absolute;
     width: 100%;
     top: 20%;
     padding: 4px;
-    z-index: 2px;
-}
-
-.movie-info h1 {
+  }
+  
+  .movie-info h1 {
     font-size: xx-large;
     font: bold;
     color: white;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
     padding-left: 15px;
-}
-
-.secondary-line {
+  }
+  
+  .movie-info h2 {
+    padding-left: 15px;
+    padding-bottom: 35px;
+    font: bold;
+    color: white;
+  }
+  
+  .buttons-section {
     display: inline-block;
-}
-
-p {
+  }
+  
+  p {
     font-size: small;
     color: gray;
     font: bold;
     padding-bottom: 5px;
     padding-left: 15px;
-}
-
-.secondary-line button {
+  }
+  
+  .buttons-section button {
     background: transparent;
     border: 1px solid white;
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
     box-sizing: border-box;
-    color: #FFFFFF;
+    color: #ffffff;
     cursor: pointer;
-    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
     font-size: 14px;
     font-weight: 800;
     line-height: 16px;
     min-height: 40px;
     outline: 0;
     padding: 12px 14px;
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-top: 2px;
     text-align: center;
     text-transform: none;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
     vertical-align: middle;
-}
-
-.secondary-line button:hover,
-.secondary-line button:active {
-  background-color: initial;
-  background-position: 0 0;
-  color: #ff0800;
-}
-
-.secondary-line button:active {
-  opacity: .5;
-}
-
-.overview {
+  }
+  
+  .buttons-section button:hover,
+  .buttons-section button:active {
+    background-color: initial;
+    background-position: 0 0;
+    color: #ff0800;
+  }
+  
+  .buttons-section button:active {
+    opacity: 0.5;
+  }
+  
+  .overview {
     font-size: medium;
     color: white;
     padding-left: 15px;
     padding-top: 10px;
     width: 50%;
-}
+  }
+  
+  .video-container {
+    padding-left: 15px;
+    padding-top: 15px;
+  }
+  
+  .popup-text h3 {
+    text-align: center;
+    color: black;
+  }
+  

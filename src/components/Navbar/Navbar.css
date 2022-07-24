@@ -58,8 +58,7 @@
   display: none;
 }
 
-@media screen and (max-width: 850px) {
-
+@media screen and (max-width: 870px) {
   nav .search-bar {
     display: none;
   }
@@ -120,4 +119,3 @@
     font-size: 2rem;
   }
 }
-
