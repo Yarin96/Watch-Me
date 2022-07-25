@@ -6,6 +6,8 @@
   align-items: center;
   font-size: 1.2rem;
   border: 1px solid rgb(149, 0, 0);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .navbar-logo {

@@ -1,25 +1,18 @@
-.spinner::after {
-    content: "";
-    box-sizing: border-box;
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    left: calc(50% - 20px);
-    /* top: 580px; */
-    margin-top: 130px;
-    border-radius: 50%;
-  }
-  
-  .spinner.smooth::after {
-    border-top: 4px solid rgba(255, 255, 255, 1);
-    border-left: 4px solid rgba(255, 255, 255, 1);
-    border-right: 4px solid rgba(255, 255, 255, 0);
-    animation: spinner 0.6s linear infinite;
-  }
-  
-  @keyframes spinner {
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
+.main-footer {
+  background-color: rgb(24, 24, 24);
+  border: 1px solid rgb(149, 0, 0);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  height: 40px;
+  margin-top: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.footer-container h1 {
+  display: inline-block;
+  color: rgb(188, 0, 0);
+  font-weight: lighter;
+  font-size: larger;
+}
