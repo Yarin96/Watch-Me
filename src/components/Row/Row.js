@@ -32,11 +32,12 @@ const Row = ({ title, fetchURL }) => {
   };
 
   return loading ? (
-    <div className="outer">
+    <div className="outer-loading">
       <Loading />
     </div>
   ) : (
     <div className="outer">
+      <br />
       <h2>{title}</h2>
       <div className="movie-slider">
         <div className="left-arrow">
@@ -61,6 +62,7 @@ const Row = ({ title, fetchURL }) => {
           <MdChevronRight onClick={slideRight} size={40} />
         </div>
       </div>
+      <br />
     </div>
   );
 };

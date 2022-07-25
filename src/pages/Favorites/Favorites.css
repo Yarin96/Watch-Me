@@ -1,29 +1,29 @@
 .outer {
     width: 80%;
     margin: 0 auto;
-}
-
-h1 {
+  }
+  
+  h1 {
     color: white;
     font: bold;
     padding: 4px;
     font-size: large;
     display: flex;
-}
-
-img {
+  }
+  
+  img {
     width: 100%;
     height: 400px;
     object-fit: cover;
-}
-
-.movie-slider {
+  }
+  
+  .movie-slider {
     position: relative;
     display: flex;
     place-items: center;
-}
-
-#slider {
+  }
+  
+  #slider {
     width: 100%;
     height: 100%;
     white-space: nowrap;
@@ -31,10 +31,9 @@ img {
     scroll-behavior: smooth;
     position: relative;
     overflow: hidden;
-
-}
-
-.left-arrow {
+  }
+  
+  .left-arrow {
     background-color: white;
     position: absolute;
     cursor: pointer;
@@ -42,13 +41,13 @@ img {
     opacity: 80%;
     z-index: 10;
     border-radius: 25px;
-}
-
-.left-arrow:hover {
+  }
+  
+  .left-arrow:hover {
     opacity: 100%;
-}
-
-.right-arrow {
+  }
+  
+  .right-arrow {
     background-color: white;
     position: absolute;
     cursor: pointer;
@@ -56,8 +55,9 @@ img {
     opacity: 80%;
     z-index: 10;
     border-radius: 25px;
-}
-
-.right-arrow:hover {
+  }
+  
+  .right-arrow:hover {
     opacity: 100%;
-}
+  }
+  
