@@ -22,6 +22,7 @@ const Favorites = () => {
       <Background fav={true} />
       {favorites.length === 0 ? (
         <div className="outer">
+          <br />
           <h1>
             <span role="img" aria-label="cinema">
               My Favorites 🍿📽️
@@ -32,9 +33,11 @@ const Favorites = () => {
               No movies added to Favorites yet, please add some. 😕
             </span>
           </h1>
+          <br />
         </div>
       ) : (
         <div className="outer">
+          <br />
           <h1>
             <span role="img" aria-label="cinema">
               My Favorites 🍿📽️
@@ -60,6 +63,7 @@ const Favorites = () => {
               <MdChevronRight onClick={slideRight} size={40} />
             </div>
           </div>
+          <br />
         </div>
       )}
     </>
