@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import SearchIcon from "../../images/search.svg";
 import "./SearchBar.css";
 
-const SearchBar = () => {
+function SearchBar() {
   const {
     search,
     setSearch,
@@ -29,6 +29,6 @@ const SearchBar = () => {
       </div>
     </>
   );
-};
+}
 
 export default SearchBar;

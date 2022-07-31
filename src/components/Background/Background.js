@@ -6,7 +6,7 @@ import Popup from "../Popup/Popup";
 import { MdPlayCircle } from "react-icons/md";
 import "./Background.css";
 
-const Background = (props) => {
+function Background(props) {
   const { chosenMovieImg, shortenString, Trailer } = useContext(BgContext);
   const { addFavMovie } = useContext(FavContext);
   const [video, setVideo] = useState([]);
@@ -29,7 +29,7 @@ const Background = (props) => {
   return (
     <div className="bg-props">
       <div className="bg-effects"></div>
-      {props.fav === true ? (
+      {props.favorite === true ? (
         <>
           <img
             src="https://user-images.githubusercontent.com/33485020/108069438-5ee79d80-7089-11eb-8264-08fdda7e0d11.jpg"
@@ -70,7 +70,6 @@ const Background = (props) => {
                     </Popup>
                     <button
                       onClick={() => {
-                        // setLike(!like);
                         addFavMovie(chosenMovieImg);
                       }}
                     >
@@ -90,7 +89,7 @@ const Background = (props) => {
               />
               <div className="movie-info">
                 <h1>
-                  <span role="img" aria-label="smily-face">
+                  <span role="img" aria-label="smiley-face">
                     Welcome to Watch-Me! 😁
                   </span>
                 </h1>
@@ -105,6 +104,6 @@ const Background = (props) => {
       )}
     </div>
   );
-};
+}
 
 export default Background;

@@ -6,20 +6,20 @@ import Background from "../../components/Background/Background";
 import MovieCard from "../../components/MovieCard/MovieCard";
 import "./Favorites.css";
 
-const Favorites = () => {
+function Favorites() {
   const { favorites, addFavMovie, removeFromFav } = useContext(FavContext);
 
   const slideLeft = () => {
-    document.getElementById("slider").scrollLeft -= 512;
+    document.getElementById("slider").scrollLeft -= 315;
   };
 
   const slideRight = () => {
-    document.getElementById("slider").scrollLeft += 512;
+    document.getElementById("slider").scrollLeft += 315;
   };
 
   return (
     <>
-      <Background fav={true} />
+      <Background favorite={true} />
       {favorites.length === 0 ? (
         <div className="outer">
           <br />
@@ -68,6 +68,6 @@ const Favorites = () => {
       )}
     </>
   );
-};
+}
 
 export default Favorites;

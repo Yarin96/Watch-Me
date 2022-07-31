@@ -6,7 +6,7 @@ import SearchBar from "../SearchBar/SearchBar";
 import Dropdown from "../Dropdown/Dropdown";
 import "./Navbar.css";
 
-const Navbar = () => {
+function Navbar() {
   const [click, setClick] = useState(false);
   const [dropdown, setDropdown] = useState(false);
 
@@ -92,6 +92,6 @@ const Navbar = () => {
       </nav>
     </>
   );
-};
+}
 
 export default Navbar;

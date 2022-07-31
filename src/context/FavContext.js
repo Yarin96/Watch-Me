@@ -1,7 +1,7 @@
 import React from "react";
 import { createContext, useState } from "react";
 
-// creating the context
+// creating the context of Favorites page
 export const FavContext = createContext();
 
 export const FavProvider = ({ children }) => {

@@ -1,13 +1,14 @@
-import Background from '../../components/Background/Background';
-import Row from '../../components/Row/Row';
+import React from "react";
+import Background from "../../components/Background/Background";
+import Row from "../../components/Row/Row";
 
-const Action = () => {
-    return(
-        <>
-            <Background fav={false}/>
-            <Row title="Action" fetchURL={"http://localhost:8000/"} />
-        </>
-    )
+function Action() {
+  return (
+    <>
+      <Background favorite={false} />
+      <Row title="Action" fetchURL={"/api/genres"} />
+    </>
+  );
 }
 
 export default Action;

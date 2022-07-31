@@ -13,7 +13,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import "./App.css";
 
-const App = () => {
+function App() {
   return (
     <BgProvider>
       <FavProvider>
@@ -38,6 +38,6 @@ const App = () => {
       </FavProvider>
     </BgProvider>
   );
-};
+}
 
 export default App;

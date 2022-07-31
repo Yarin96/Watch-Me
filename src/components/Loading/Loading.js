@@ -1,10 +1,8 @@
-import './Loading.css';
+import React from "react";
+import "./Loading.css";
 
-const Loading = () => {
-    return (
-        <div className="smooth spinner"></div>
-    );
+function Loading() {
+  return <div className="smooth spinner"></div>;
 }
 
 export default Loading;
-

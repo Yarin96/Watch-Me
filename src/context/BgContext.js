@@ -1,7 +1,7 @@
 import React from "react";
 import { createContext, useState } from "react";
 
-// creating the context
+// creating the context of Background component
 export const BgContext = createContext();
 
 export const BgProvider = ({ children }) => {

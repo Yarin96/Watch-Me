@@ -6,7 +6,7 @@ import Loading from "../Loading/Loading";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 import "./Row.css";
 
-const Row = ({ title, fetchURL }) => {
+function Row({ title, fetchURL }) {
   const [movies, setMovies] = useState([]);
   const [loading, setLoading] = useState(true);
   const { addFavMovie, removeFromFav } = useContext(FavContext);
@@ -24,11 +24,11 @@ const Row = ({ title, fetchURL }) => {
   }, [fetchURL]);
 
   const slideLeft = () => {
-    document.getElementById("slider").scrollLeft -= 512;
+    document.getElementById("slider").scrollLeft -= 315;
   };
 
   const slideRight = () => {
-    document.getElementById("slider").scrollLeft += 512;
+    document.getElementById("slider").scrollLeft += 315;
   };
 
   return loading ? (
@@ -44,9 +44,12 @@ const Row = ({ title, fetchURL }) => {
           <MdChevronLeft size={40} onClick={slideLeft} />
         </div>
         <div id="slider">
+          {/* Filtering the correct MovieCards in the Row component,
+          depending on if the "title" prop and the data fetched (from API/JSON file)
+          into "movies" array are equal */}
           {movies.map((movie) =>
-            movie.genre === title ||
-            title === "Coming Up Soon" ||
+            title === movie.genre ||
+            title === "Now Playing" ||
             title === "Search Results" ? (
               <MovieCard
                 key={movie.id}
@@ -65,6 +68,6 @@ const Row = ({ title, fetchURL }) => {
       <br />
     </div>
   );
-};
+}
 
 export default Row;

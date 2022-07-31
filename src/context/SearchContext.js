@@ -1,7 +1,7 @@
 import React from "react";
 import { createContext, useState } from "react";
 
-// creating the context
+// creating the context of the SearchBar component
 export const SearchContext = createContext();
 
 export const SearchProvider = ({ children }) => {
