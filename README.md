@@ -7,7 +7,7 @@ Explore thousands of movies, watch trailers and make your very own favorites lis
 
 ## Link:
 https://watch-me-1.web.app/
-* Note: After deploying the application to the web, the local JSON data wasn't visible.\
+* Note: The local JSON data isn't visible after deployment.\
   As a result the Genre section won't load. Issue will be fixed in the future. 
 * You could also look at the full functional app (including the JSON data) on Sandbox: https://codesandbox.io/s/3ot5p5
 
