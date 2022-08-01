@@ -7,8 +7,8 @@ Explore thousands of movies, watch trailers and make your very own favorites lis
 
 ## Link:
 https://watch-me-1.web.app/
-* Note: After deploying the application to the web, the local JSON data wasn't visible, which means that\
-  the Genre section doesn't load. Issue will be fixed in the future. 
+* Note: After deploying the application to the web, the local JSON data wasn't visible.\
+  As a result the Genre section won't load. Issue will be fixed in the future. 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
