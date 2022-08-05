@@ -1,9 +1,18 @@
 # Watch-Me
 
-A responsive movie application developed with React.js and Node.js, while focusing on the frontend side.\
+A fully responsive movie application developed with React.js and Node.js, while focusing on the frontend side.\
 All of the data is fetched from a local JSON file and an external API called TMDB.\
 Explore thousands of movies, watch trailers and make your very own favorites list!
 * This project was made as part of an academic course. 
+
+## Pictures:
+
+![image](https://user-images.githubusercontent.com/94289687/183048225-585c666c-e55c-4e0b-bb5b-7cb857e27c88.png)
+
+![image](https://user-images.githubusercontent.com/94289687/183048445-3c546be5-7cd3-479d-867a-774578d7954b.png)
+
+
+
 
 ## Link:
 https://watch-me-1.web.app/
