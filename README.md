@@ -7,7 +7,7 @@ Explore thousands of movies, watch trailers and make your very own favorites lis
 
 ## Pictures:
 
-![image](https://user-images.githubusercontent.com/94289687/183048225-585c666c-e55c-4e0b-bb5b-7cb857e27c88.png)
+![image](https://user-images.githubusercontent.com/94289687/183048608-9352db05-5c84-4790-b3ed-01e369d2a252.png)
 
 ![image](https://user-images.githubusercontent.com/94289687/183048445-3c546be5-7cd3-479d-867a-774578d7954b.png)
 
