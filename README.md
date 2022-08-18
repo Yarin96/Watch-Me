@@ -1,8 +1,8 @@
 # Watch-Me
 
-A fully responsive movie application developed with React.js and Node.js, while focusing on the frontend side.\
-All of the data is fetched from a local JSON file and an external API called TMDB.\
-Explore thousands of movies, watch trailers and make your very own favorites list!
+* A fully responsive movie application developed with React.js and Node.js, while focusing on the frontend side.\
+* All of the data is fetched from a local JSON file and an external API called TMDB.\
+* Explore thousands of movies, watch trailers and make your very own favorites list!
 * This project was made as part of an academic course. 
 
 ## Pictures:
